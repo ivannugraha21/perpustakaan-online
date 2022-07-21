@@ -1,0 +1,95 @@
+.form input, .form span{
+	border-radius: 0px;
+}
+		
+.form input {
+	width: 80%!important;
+}
+			
+.btn-block {
+	width: 100%!important;
+}
+			
+.login-page .card-login .input-group:last-child {
+	margin-bottom: 0px;
+}
+
+
+/*===================*/
+.login-page .card-login .logo-container {
+	margin-bottom: 20px!important;
+}
+
+.auth-content {
+    margin-top: 15%!important;
+}
+
+/*===================*/
+
+.dataTables_scroll tr td a, .dataTables_scroll tr td button{
+	padding: 5px 10px!important;
+}
+.dataTables_scroll {
+	padding-top: 10px!important;
+}
+
+.badge {
+	border-radius: 0!important;
+}
+	
+	
+#noty-holder{    
+	width: 100%;    
+	font-weight: bold;    
+	z-index: 1031; /* Max Z-Index in Fixed Nav Menu is 1030*/
+	text-align: left;
+}
+
+#noty-holder .page-alert button{
+	padding-top: 10px!important;
+}
+
+#main{
+    min-height:900px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.tab-content .row{
+	text-align: left!important;
+}
+.tab-content h4{
+	margin-top: 5px!important; 
+}
+
+/*========================*/
+.selectpicker {
+	border: 1px solid #E3E3E3!important;
+}
+	
+.datepicker td,th{
+	text-align: center;
+	padding: 8px 8px;
+	font-size: 14px;
+}
+			
+#form-input input {
+	border-radius: 5px;
+}
+			
+#form-input .form-group {
+	text-align: left!important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	background-color: #f96332 !important;
+}
+
+input[name~="umur_peminjam"] {
+	width: 75px!important;
+}
+		
+
