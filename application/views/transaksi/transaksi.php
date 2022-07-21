@@ -176,8 +176,12 @@
 							}
 							var Date1 = moment(data[i].tanggal_pinjam).format('DD MMMM YYYY');
 							var Date2 = moment(data[i].estimasi_pengembalian).format('DD MMMM YYYY');
+							var Title = '<span class="badge badge-danger">Buku Telah Dihapus</span>';
+							if (data[i].buku != null) {
+								Title = data[i].buku.judul_buku;
+							}
 							//
-							$('#table_id').DataTable().row.add([data[i].buku.judul_buku, data[i].nama_peminjam, Date1, Date2, dateAr, Action]).draw(false);
+							$('#table_id').DataTable().row.add([Title, data[i].nama_peminjam, Date1, Date2, dateAr, Action]).draw(false);
 						}
 						
 					}

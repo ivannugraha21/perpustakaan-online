@@ -18,9 +18,13 @@ class TransaksiModel extends CI_Model {
 				$this->db->select('*');
 				$this->db->where('id', $val->buku_id);
 				$buku = $this->db->get('data_buku');
-				$buku = $buku->result()[0];
-				$query[$key]->buku = $buku;
-				
+				// 
+				if ($buku->num_rows() != 0) {
+					$buku = $buku->result()[0];
+					$query[$key]->buku = $buku;
+				} else {
+					$query[$key]->buku = null;
+				}
 			}
 			return $query;
 		} else {
